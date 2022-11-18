@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK OF KCET</title>
+    <style>
+        body {
+            background-image: url(https://ucppr2k2q2u3lbr9b2ah3a31-wpengine.netdna-ssl.com/blog/wp-content/uploads/sites/3/2021/04/show-chatbots-for-banking.jpg);
+            background-size: cover;
+        }
+
+        h2 {
+            background-color: aliceblue;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        h1 {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Welcome to BANK OF KCET</h1>
+        <div>
+            <h2>Use The chatbot for Access The bank service </h2>
+            <!-- <img src="https://ucppr2k2q2u3lbr9b2ah3a31-wpengine.netdna-ssl.com/blog/wp-content/uploads/sites/3/2021/04/show-chatbots-for-banking.jpg"
+                alt="bank image"> -->
+        </div>
+        <script>
+            window.watsonAssistantChatOptions = {
+                integrationID: "ef26ea7e-a5d8-45f9-b075-c4a3ef279904", // The ID of this integration.
+                region: "us-south", // The region your integration is hosted in.
+                serviceInstanceID: "aa178ac8-b8cd-48e9-a677-a18fd05a9779", // The ID of your service instance.
+                onLoad: function (instance) { instance.render(); }
+            };
+            setTimeout(function () {
+                const t = document.createElement('script');
+                t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+                document.head.appendChild(t);
+            });
+        </script>
+</body>
+
+</html>
